@@ -28,15 +28,23 @@
         padding: 0;
         box-sizing: border-box;
       }
+
+      .navbar {
+        height: 50px;
+      }
+
+      section {
+        margin-top: 50px;
+      }
     </style>
 
     <title>Bootstrap Portfolio</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#Home">Home</a>
+        <a class="navbar-brand" href="./index.html">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +56,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link active" href="./about.html">About</a>
             <a class="nav-link" href="./resume.html">Resume</a>
@@ -62,20 +73,66 @@
 
     <!-- Content -->
 
-    <section class="vw-100 vh-100">
-      <div class="container">
-        <h2 class="col-5 text fw-bold text-decoration-underline">
-          About
-        </h2>
-      </div>
-      <div class="col-5">
-        <p></p>
-        <div class="">
-          <h3></h3>
-          <h4></h4>
-          <p></p>
+    <section class="d-flex flex-column flex-wrap">
+      <h2 class="text-center fw-bold text-decoration-underline mb-4 mt-4">
+        About
+      </h2>
+      <div class="container d-flex">
+        <div class="col-6">
+          <img src="./Images/Mika.jpg" class="img-fluid" />
         </div>
-        <div class="list"></div>
+        <div class="col-6 ps-5">
+          <h3>Aspiring Full-Stack Developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias
+            ex distinctio itaque at. Eum perspiciatis atque quidem veritatis
+            deserunt accusantium hic laboriosam dignissimos, quia laudantium
+            pariatur quam harum exercitationem necessitatibus suscipit corporis
+            reiciendis, id natus, fuga deleniti impedit earum temporibus?
+            Eveniet omnis illo velit ex eius quibusdam atque quam!
+          </p>
+          <div class="d-flex">
+            <div class="d-flex flex-column col-6 pt-1">
+              <strong>Birthday:</strong><span>24 September 2003</span>
+              <strong>City:</strong><span>Abbotsdale, Malmesbury</span>
+            </div>
+            <div class="d-flex flex-column col-6 pt-1">
+              <strong>Website:</strong><span>www.example.com</span>
+              <strong>Phone:</strong><span>081 707 9992</span>
+            </div>
+          </div>
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            animi amet quaerat, qui adipisci voluptatibus iste hic nostrum
+            dolore unde voluptas eligendi doloremque! Quis aspernatur error
+            expedita nam. A vel maxime corrupti velit! Reprehenderit numquam
+            repellat nulla nam, similique, eos facere quia iure quis soluta
+            debitis nesciunt optio animi culpa.
+          </p>
+          <div class="skillrow d-flex flex-lg-row flex-md-column">
+            <div class="after col-6">
+              <p>HTML: <span>99%</span></p>
+              <progress value="99" min="0" max="100"></progress>
+
+              <p>CSS: 83%</p>
+              <progress value="83" min="0" max="100"></progress>
+
+              <p>Bootstrap: 87%</p>
+              <progress value="87" min="0" max="100"></progress>
+            </div>
+
+            <div class="after col-6">
+              <p>VueJS: 83%</p>
+              <progress value="83" min="0" max="100"></progress>
+
+              <p>DATABASE: 65%</p>
+              <progress value="65" min="0" max="100"></progress>
+
+              <p>Node JS: 71%</p>
+              <progress value="71" min="0" max="100"></progress>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

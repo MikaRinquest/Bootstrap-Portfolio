@@ -28,6 +28,19 @@
         padding: 0;
         box-sizing: border-box;
       }
+
+      .navbar {
+        height: 50px;
+      }
+
+      section {
+        margin-top: 50px;
+      }
+
+      img {
+        width: 400px;
+        height: 400px;
+      }
     </style>
 
     <title>Bootstrap Portfolio</title>
@@ -36,7 +49,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#Home">Home</a>
+        <a class="navbar-brand" href="./index.html">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,7 +61,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link active" href="./about.html">About</a>
             <a class="nav-link" href="./resume.html">Resume</a>
@@ -62,7 +78,28 @@
 
     <!-- Content -->
 
-    <section class="vw-100 vh-100"></section>
+    <section class="">
+      <h2 class="text-center fw-bold text-decoration-underline mb-4 mt-4">
+        Portfolio
+      </h2>
+
+      <div class="">
+        <h3 class="text-center fw-light">
+          Projects I have worked on thus far.
+        </h3>
+        <div class="d-flex ms-5 me-5">
+          <div class="col-4">
+            <img src="./Images/business.jpg" class="" />
+          </div>
+          <div class="col-4">
+            <img src="./Images/Calculator.PNG" class="" />
+          </div>
+          <div class="col-4">
+            <img src="./Images/japan.jpg " class="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
